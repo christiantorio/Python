@@ -6,11 +6,11 @@ WORKDIR /app
 COPY . app.py /app/
 
 ## Step 3:
-pip install -r requirements.txt
-hadolint ignore=DL3013
+RUN pip install -r requirements.txt
+RUN HADOLINT ignore=DL3013
 
 ## Step 4:
-Expose  80
+EXPOSE 80
 
 ## Step 5:
 # Run app.py at container launch
