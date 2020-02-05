@@ -8,7 +8,7 @@
 setup:
 	# Create python virtualenv & source it
 	# source ~/.devops/bin/activate
-	py -m venv /f/Coding/Python/Docker/pipeline-project/.devops
+	python3 -m venv /f/Coding/Python/Docker/pipeline-project/.devops
 
 install:
 	# This should be run from inside a virtualenv
