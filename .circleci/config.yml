@@ -30,7 +30,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            py -m venv /f/Coding/Python/Docker/pipeline-project/.devops
+            python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
       - save_cache:
