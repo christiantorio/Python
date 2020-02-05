@@ -2,12 +2,13 @@ FROM python:3.7.3-stretch
 
 ## Step 1:
 WORKDIR /app
+
 ## Step 2:
-COPY . app.py /app/
+RUN pip install -r requirements.txt
+RUN hadolint --ignore DL3013 Dockerfile
 
 ## Step 3:
-RUN pip install -r requirements.txt
-RUN HADOLINT ignore=DL3013
+COPY . app.py /app/
 
 ## Step 4:
 EXPOSE 80

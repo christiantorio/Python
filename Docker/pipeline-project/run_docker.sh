@@ -9,4 +9,4 @@ docker build -t pyapp .
 docker image ls
 
 # Step 3: 
-docker run -p 8000:5001 pyapp
+docker run -p 8000:80 pyapp
