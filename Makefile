@@ -16,8 +16,8 @@ install:
 
 test:
 	# Additional, optional, tests could go here
-	python -m pytest -vv --cov=myrepolib tests/*.py
-	python -m pytest --nbval notebook.ipynb
+	#python3 -m pytest -vv --cov=myrepolib tests/*.py
+	#python3 -m pytest --nbval notebook.ipynb
 
 lint:
 	# S his is linter for Dockerfiles
