@@ -10,10 +10,6 @@ setup:
 	# source ~/.devops/bin/activate
 	py -m venv /f/Coding/Python/Docker/pipeline-project/.devops
 
-start:
-    #starting .devops virtualenv
-	source .devops/Scripts/activate
-
 install:
 	# This should be run from inside a virtualenv
 	pip install -r requirements.txt
