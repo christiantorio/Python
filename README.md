@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+[![ChristianTorio](https://circleci.com/gh/ChristianTorio/pyapp.svg?style=svg)](https://circleci.com/gh/christiantorio)
+
 
 ## Project Overview
 
@@ -16,8 +17,6 @@ Your project goal is to operationalize this working, machine learning microservi
 * Configure Kubernetes and create a Kubernetes cluster
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
-
-[![ChristianTorio](https://circleci.com/gh/ChristianTorio/pyapp.svg?style=svg)](https://circleci.com/gh/christiantorio/Python/tree/master)
 
 You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
 
