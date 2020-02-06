@@ -1,4 +1,4 @@
-[![ChristianTorio](https://circleci.com/gh/ChristianTorio/pyapp.svg?style=svg&circle-token=3b37eff44033fa863d93cca519fc1ee0c480b05a)](https://circleci.com/gh/christiantorio)
+[![CircleCI](https://circleci.com/gh/christiantorio/Python.svg?style=svg)](https://circleci.com/gh/christiantorio/Python)
 
 
 ## Project Overview
