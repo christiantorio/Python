@@ -17,7 +17,7 @@ Your project goal is to operationalize this working, machine learning microservi
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
-[!(https://circleci.com/gh//pyapp.svg?style=svg)](https://circleci.com/gh/christiantorio/Python/tree/master)
+[![Public](https://circleci.com/gh/Public/pyapp.svg?style=svg)](https://circleci.com/gh/christiantorio/Python/tree/master)
 
 You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
 
