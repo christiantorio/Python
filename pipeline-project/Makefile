@@ -8,11 +8,11 @@
 setup:
 	# Create python virtualenv & source it
 	# source ~/.devops/bin/activate
-	python3 -m venv ~/.devops
+	py -m venv f/Coding/Python/pipeline-project/.devops
 
 install:
 	# This should be run from inside a virtualenv
-	pip install --upgrade pip && pip install -r requirements.txt
+	 pip install --user -r requirements.txt
 
 test:
 	# Additional, optional, tests could go here

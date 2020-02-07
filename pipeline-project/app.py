@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
 import logging
@@ -55,17 +57,19 @@ def predict():
     
     # Logging the input payload
     json_payload = request.json
-    LOG.info("JSON payload: \n{json_payload}")
+    LOG.info(f"JSON payload: \n{json_payload}")
     inference_payload = pd.DataFrame(json_payload)
-    LOG.info("Inference payload DataFrame: \n{inference_payload}")
+    LOG.info(f"Inference payload DataFrame: \n{inference_payload}")
     # scale the input
     scaled_payload = scale(inference_payload)
     # get an output prediction from the pretrained model, clf
     prediction = list(clf.predict(scaled_payload))
-    LOG.info("Inference payload DataFrame: \n{prediction}")
+    LOG.info(f"Prediction: \n{prediction}")
     # TO DO:  Log the output prediction value
     return jsonify({'prediction': prediction})
 
+    LOG.info(f"Prediction: \n{prediction}")
+    
 if __name__ == "__main__":
     # load pretrained model as clf
     clf = joblib.load("./model_data/boston_housing_prediction.joblib")

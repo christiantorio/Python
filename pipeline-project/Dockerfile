@@ -4,12 +4,12 @@ FROM python:3.7.3-stretch
 WORKDIR /app
 
 ## Step 2:
-COPY  requirements.txt /tmp/requirements.txt
-RUN pip install -r /tmp/requirements.txt
-RUN hadolint --ignore DL3013 Dockerfile
+COPY . app.py /app/
 
 ## Step 3:
-COPY . app.py /app/
+COPY  requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
+#RUN hadolint --ignore DL3013 Dockerfile
 
 ## Step 4:
 EXPOSE 80
