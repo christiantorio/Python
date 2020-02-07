@@ -67,8 +67,6 @@ def predict():
     LOG.info(f"Prediction: \n{prediction}")
     # TO DO:  Log the output prediction value
     return jsonify({'prediction': prediction})
-
-    LOG.info(f"Prediction: \n{prediction}")
     
 if __name__ == "__main__":
     # load pretrained model as clf

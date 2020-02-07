@@ -9,7 +9,7 @@ COPY . app.py /app/
 ## Step 3:
 COPY  requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
-#RUN hadolint --ignore DL3013 Dockerfile
+RUN hadolint --ignore DL3013 Dockerfile
 
 ## Step 4:
 EXPOSE 80
